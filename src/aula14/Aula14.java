@@ -9,12 +9,21 @@ public class Aula14 {
         v[2] = new Video("aula 3 de poo");
         
         Gafanhoto g[] = new Gafanhoto[2];
-        g[0] = new Gafanhoto("KEvin", 21, "m", "keke");
+        g[0] = new Gafanhoto("Kevin", 21, "Masculino", "Kamf");
+        g[1] = new Gafanhoto("Jonas", 22, "Masculino", "Soap");
         
         Visualizacao vis[] = new Visualizacao[5];
         vis[0] = new Visualizacao(g[0], v[2]);
-        vis[0].avaliar();
-        System.out.println(vis[0].toString());
+        vis[1] = new Visualizacao(g[1], v[2]);
+        
+        v[2].like(); //o método like está definido na classe Video, então é utilizado a chamada v[2].like, que seria like no vídeo 2.
+        v[2].like();
+        v[2].play();
+        
+        
+
+        System.out.println(vis[1].toString());
+        
     }
     
 }

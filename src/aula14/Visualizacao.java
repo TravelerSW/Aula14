@@ -49,7 +49,7 @@ public class Visualizacao {
 
     @Override
     public String toString() {
-        return "Visualizacao{" + "espectador=" + espectador + ", filme=" + filme + '}';
+        return "" + espectador + "\n" + filme ;
     }
     
 }
